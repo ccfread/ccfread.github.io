@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>CentOS 7 安装MySQL 8.0 - 我的 Hugo FixIt 网站</title><meta name="author" content="Fread">
+<meta name="author-link" content="https://ezxmt.com">
+<meta name="description" content="自己尝试安装了一次MqSQl，小白一个，慢慢摸索安装MySQL,CentOS 7 安装MySQL 8.0" /><meta name="keywords" content='Stu, MySQL, CentOS' /><meta itemprop="name" content="CentOS 7 安装MySQL 8.0">
+<meta itemprop="description" content="自己尝试安装了一次MqSQl，小白一个，慢慢摸索安装MySQL,CentOS 7 安装MySQL 8.0"><meta itemprop="datePublished" content="2023-02-20T20:14:22+08:00" />
+<meta itemprop="dateModified" content="2023-02-20T20:14:22+08:00" />
+<meta itemprop="wordCount" content="616">
+<meta itemprop="keywords" content="Stu,MySQL,CentOS," /><meta property="og:title" content="CentOS 7 安装MySQL 8.0" />
+<meta property="og:description" content="自己尝试安装了一次MqSQl，小白一个，慢慢摸索安装MySQL,CentOS 7 安装MySQL 8.0" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/centos7instmysql/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-20T20:14:22+08:00" />
+<meta property="article:modified_time" content="2023-02-20T20:14:22+08:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="CentOS 7 安装MySQL 8.0"/>
+<meta name="twitter:description" content="自己尝试安装了一次MqSQl，小白一个，慢慢摸索安装MySQL,CentOS 7 安装MySQL 8.0"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://localhost:1313/posts/centos7instmysql/" /><link rel="prev" href="http://localhost:1313/posts/first_post/" /><link rel="next" href="http://localhost:1313/posts/ct/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "CentOS 7 安装MySQL 8.0",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/posts\/centos7instmysql\/"
+    },"genre": "posts","keywords": "Stu, MySQL, CentOS","wordcount":  616 ,
+    "url": "http:\/\/localhost:1313\/posts\/centos7instmysql\/","datePublished": "2023-02-20T20:14:22+08:00","dateModified": "2023-02-20T20:14:22+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Fread"
+      },"description": "自己尝试安装了一次MqSQl，小白一个，慢慢摸索安装MySQL,CentOS 7 安装MySQL 8.0"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="我的 Hugo FixIt 网站"><span class="header-title-text">我的 Hugo FixIt 网站</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              >文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              >分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/about"
+                
+                
+              >关于</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              >标签</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="我的 Hugo FixIt 网站"><span class="header-title-text">我的 Hugo FixIt 网站</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                >文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                >分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/about"
+                  
+                  
+                >关于</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                >标签</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>CentOS 7 安装MySQL 8.0</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://fread.top" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/121fedd5171cf054a2887fdd5cbf4d0a?s=32&amp;d=" alt="Fread" data-title="Fread" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Fread</a></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/softinstall/" class="post-category" title="分类 - SoftInstall"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> SoftInstall</a></span></div><div class="post-meta-line"><span title="发布于 2023-02-20 20:14:22"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-02-20">2023-02-20</time></span>&nbsp;<span title="616 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 700 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="CentOS 7 安装MySQL 8.0">
+            <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
+          </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一安装之前检测系统是否有自带的mysql">一、安装之前检测系统是否有自带的MySQL</a></li>
+        <li><a href="#二准备安装">二、准备安装</a></li>
+        <li><a href="#三安装mysql">三、安装MySQL</a></li>
+        <li><a href="#四初始化数据库">四、初始化数据库</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><div class="details admonition warning open">
+      <div class="details-summary admonition-title">
+        <i class="icon fa-solid fa-exclamation-triangle fa-fw" aria-hidden="true"></i>警告<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="details-content">
+        <div class="admonition-content">本文最后更新于 2023-02-20，文中内容可能已过时。</div>
+      </div>
+    </div><h3 id="一安装之前检测系统是否有自带的mysql" class="heading-element">
+  <a href="#%e4%b8%80%e5%ae%89%e8%a3%85%e4%b9%8b%e5%89%8d%e6%a3%80%e6%b5%8b%e7%b3%bb%e7%bb%9f%e6%98%af%e5%90%a6%e6%9c%89%e8%87%aa%e5%b8%a6%e7%9a%84mysql" class="heading-mark"></a>一、安装之前检测系统是否有自带的MySQL</h3><div class="highlight" id="id-1"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#检查是否安装过MySQL</span>
+</span></span><span class="line"><span class="cl">rpm -qa <span class="p">|</span> grep mysql 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#检查是否存在 mariadb 数据库（内置的MySQL数据库），有则强制删除  </span>
+</span></span><span class="line"><span class="cl">rpm -qa <span class="p">|</span> grep mariadb 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rpm -e --nodeps mariadb-libs-5.5.68-1.el7.x86_64 <span class="c1">#强制删除 </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rpm -e --nodeps mariadb-5.5.68-1.el7.x86_64 <span class="c1">#强制删除     </span></span></span></code></pre></div><h3 id="二准备安装" class="heading-element">
+  <a href="#%e4%ba%8c%e5%87%86%e5%a4%87%e5%ae%89%e8%a3%85" class="heading-mark"></a>二、准备安装</h3><p>跳转local文件夹，安装wget</p>
+<div class="highlight" id="id-2"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local <span class="c1">#安装包目录</span>
+</span></span><span class="line"><span class="cl">yum install wget</span></span></code></pre></div><p>下载MySQL安装包，我这里以8.0.33版本为例</p>
+<div class="highlight" id="id-3"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.33-1.el7.x86_64.rpm-bundle.tar <span class="c1">#下载8.0安装包  </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir mysql <span class="o">&amp;&amp;</span> tar -xvf mysql-8.0.33-1.el7.x86_64.rpm-bundle.tar -C mysql <span class="o">&amp;&amp;</span> <span class="nb">cd</span> mysql <span class="c1">#创建文件夹，把下载的安装包解压到该目录  </span></span></span></code></pre></div><h3 id="三安装mysql" class="heading-element">
+  <a href="#%e4%b8%89%e5%ae%89%e8%a3%85mysql" class="heading-mark"></a>三、安装MySQL</h3><p>只是举例，我这里是把所有解压内容都装了，自己根据自己的情况安装。安装顺序如下</p>
+<div class="highlight" id="id-4"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">rpm -ivh mysql-community-common-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-client-plugins-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">yum -y install libaio
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-embedded-compat-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-libs-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-libs-compat-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">yum install openssl-devel -y
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-devel-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-client-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-icu-data-files-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">yum install net-tools -y
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-server-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">yum install perl-JSON.noarch -y
+</span></span><span class="line"><span class="cl">yum install perl-Test-*.noarch -y
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-test-8.0.36-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-debuginfo-8.0.36-1.el7.x86_64.rpm</span></span></code></pre></div><h3 id="四初始化数据库" class="heading-element">
+  <a href="#%e5%9b%9b%e5%88%9d%e5%a7%8b%e5%8c%96%e6%95%b0%e6%8d%ae%e5%ba%93" class="heading-mark"></a>四、初始化数据库</h3><p>MySQL使用之前先初始化</p>
+<div class="highlight" id="id-5"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#初始化</span>
+</span></span><span class="line"><span class="cl">mysqld --initialize --console
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#目录授权，否则可能会启动失败</span>
+</span></span><span class="line"><span class="cl">chown -R mysql:mysql /var/lib/mysql/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#启动mysql</span>
+</span></span><span class="line"><span class="cl">systemctl start mysqld.service</span></span></code></pre></div><p>对应的重启、关闭mysql命令如下</p>
+<div class="highlight" id="id-6"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl stop mysqld <span class="c1">#停止</span>
+</span></span><span class="line"><span class="cl">systemctl restart mysqld <span class="c1">#启动</span></span></span></code></pre></div><p>查询mysql状态</p>
+<div class="highlight" id="id-7"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl status mysqld  </span></span></code></pre></div><p>显示Active: active (running) 表示成功启动   </p>
+<p>修改mysql的登录密码，修改密码前需要使用临时账户登录一下：</p>
+<div class="highlight" id="id-8"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat /var/log/mysqld.log <span class="p">|</span> grep password        </span></span></code></pre></div><p>使用临时密码登录mysql</p>
+<div class="highlight" id="id-9"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mysql -u root -p  </span></span></code></pre></div><p>然后输入自己的临时密码，回车登录，这里是不显示输出      </p>
+<p>登录进来后第一件事情，修改root的密码</p>
+<div class="highlight" id="id-10"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="k">identified</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">mysql_native_password</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="s1">&#39;你的密码&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></div><p>mysql8对密码的强度有很高的要求，具体密码要求可使用以下命令查询</p>
+<div class="highlight" id="id-11"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">SHOW</span><span class="w"> </span><span class="n">VARIABLES</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="err">‘</span><span class="n">validate_password</span><span class="o">%</span><span class="err">’</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></div><p>mysql已经安装完成。</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-02-20 20:14:22">更新于 2023-02-20&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/stu/" class="post-tag" title="标签 - Stu">Stu</a><a href="/tags/mysql/" class="post-tag" title="标签 - MySQL">MySQL</a><a href="/tags/centos/" class="post-tag" title="标签 - CentOS">CentOS</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/first_post/" class="post-nav-item" rel="prev" title="我的第一篇文章"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>我的第一篇文章</a>
+      <a href="/posts/ct/" class="post-nav-item" rel="next" title="赤兔之死">赤兔之死<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://ezxmt.com"target="_blank" rel="external nofollow noopener noreferrer">Fread</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='网站运行中……'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="ms-1 d-none">悄咪咪的存活了</span><span class="run-times ms-1">网站运行中……</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div><div class="footer-line beian"><span class="gov"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41082302411133" target="_blank" > &nbsp;豫公网安备 41082302411133号</a></span><span class="icp footer-divider"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">京ICP备15015906号-6</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":12},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"siteTime":"2023-05-18 16:15:22+08:00"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

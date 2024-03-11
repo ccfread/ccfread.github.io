@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Java - 分类 - 我的 Hugo FixIt 网站</title>
+    <link>http://localhost:1313/categories/java/</link>
+    <description>Java - 分类 | 我的 Hugo FixIt 网站</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Fri, 26 May 2023 20:19:50 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/java/" rel="self" type="application/rss+xml" /><item>
+  <title>JAVA基础-CallBack回调-Hook-钩子</title>
+  <link>http://localhost:1313/posts/javahockstu/</link>
+  <pubDate>Fri, 26 May 2023 20:19:50 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://localhost:1313/posts/javahockstu/</guid>
+  <description><![CDATA[自学JAVA基础-CallBack回调-Hook-钩子，练习代码 首先定义一个动物的接口，里面包含一个cry函数 package com.ezxmt.hook; public interface Ianimal { void cry(); }定义两个具体]]></description>
+</item>
+</channel>
+</rss>
