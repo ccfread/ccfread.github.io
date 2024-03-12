@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Wordpress - 分类 - 我的 Hugo FixIt 网站</title>
-    <link>http://localhost:1313/categories/wordpress/</link>
+    <link>http://example.org/categories/wordpress/</link>
     <description>Wordpress - 分类 | 我的 Hugo FixIt 网站</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 27 May 2023 12:14:22 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/wordpress/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 27 May 2023 12:14:22 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/wordpress/" rel="self" type="application/rss+xml" /><item>
   <title>wordpress每天60秒，一篇小文章</title>
-  <link>http://localhost:1313/posts/wp-60s/</link>
+  <link>http://example.org/posts/wp-60s/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/wp-60s/</guid>
+  <guid>http://example.org/posts/wp-60s/</guid>
   <description><![CDATA[新建php文件，拷贝如下内容,把里面的名称什么的换成自己的网站，每天做个定时任务自动调用一下就行。 自己做个记录。如果有需要可以自行修改内容 data[0]-&gt;content;]]></description>
 </item>
 </channel>

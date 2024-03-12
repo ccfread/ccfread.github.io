@@ -1,79 +1,87 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>所有文章 - 我的 Hugo FixIt 网站</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://example.org/posts/</link>
     <description>所有文章 | 我的 Hugo FixIt 网站</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
   <title>记录拔智齿经历</title>
-  <link>http://localhost:1313/posts/extract-tooth/</link>
+  <link>http://example.org/posts/extract-tooth/</link>
   <pubDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/extract-tooth/</guid>
+  <guid>http://example.org/posts/extract-tooth/</guid>
   <description><![CDATA[记录拔智齿经历 先说总结，拔智齿还是要年轻的时候去拔，年纪大了拔牙是真的难受。 春节前感觉自己的右上智齿影响咬合，吃东西容易藏脏东西，本来想着找]]></description>
 </item>
 <item>
   <title>2024年生日快乐</title>
-  <link>http://localhost:1313/posts/2024-happybirthday/</link>
+  <link>http://example.org/posts/2024-happybirthday/</link>
   <pubDate>Wed, 28 Feb 2024 23:05:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/2024-happybirthday/</guid>
+  <guid>http://example.org/posts/2024-happybirthday/</guid>
   <description><![CDATA[祝我自己生日快乐 今天是我32岁的生日了，我自己其实都忘掉了，上午的时候突然收到了一个外卖的电话，告诉我有一个星巴克的订单，别人给我买的，要我]]></description>
 </item>
 <item>
   <title>2024新年快乐</title>
-  <link>http://localhost:1313/posts/2024-happynewyear/</link>
+  <link>http://example.org/posts/2024-happynewyear/</link>
   <pubDate>Fri, 09 Feb 2024 16:30:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/2024-happynewyear/</guid>
+  <guid>http://example.org/posts/2024-happynewyear/</guid>
   <description><![CDATA[2024年新年快乐 今天是农历2023年大年三十了，下午四点半，爸爸妈妈在准备饺子馅，老婆带着娃娃睡觉💤呢，我刚贴了春联，全家准备过年了。回顾]]></description>
 </item>
 <item>
   <title>wordpress每天60秒，一篇小文章</title>
-  <link>http://localhost:1313/posts/wp-60s/</link>
+  <link>http://example.org/posts/wp-60s/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/wp-60s/</guid>
+  <guid>http://example.org/posts/wp-60s/</guid>
   <description><![CDATA[新建php文件，拷贝如下内容,把里面的名称什么的换成自己的网站，每天做个定时任务自动调用一下就行。 自己做个记录。如果有需要可以自行修改内容 data[0]-&gt;content;]]></description>
 </item>
 <item>
+  <title>主题配置内容</title>
+  <link>http://example.org/posts/yamlconfig/</link>
+  <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://example.org/posts/yamlconfig/</guid>
+  <description><![CDATA[主题配置文件可配置的全量内容 [params] # FixIt 主题版本 version = &#34;0.2.X&#34; # 例如：&#34;0.2.X&#34;, &#34;0.2.15&#34;, &#34;v0.2.15&#34; 等 # 网站描述 description = &#34;这是我的 Hugo FixIt 网站&#3]]></description>
+</item>
+<item>
   <title>JAVA基础-ArrayList学习-初级版本</title>
-  <link>http://localhost:1313/posts/javaarrayliststu/</link>
+  <link>http://example.org/posts/javaarrayliststu/</link>
   <pubDate>Fri, 26 May 2023 20:19:50 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/javaarrayliststu/</guid>
+  <guid>http://example.org/posts/javaarrayliststu/</guid>
   <description><![CDATA[AVA基础学习，学习ArrayList，自己尝试写一下方法，加深理解，帮助记忆。 package com.ezxmt.collection; import com.ezxmt.hook.Cat; import com.ezxmt.hook.Dog; import java.util.Date; /** * 学习ArrayList, */ public class TestArrayList { //创]]></description>
 </item>
 <item>
   <title>JAVA基础-CallBack回调-Hook-钩子</title>
-  <link>http://localhost:1313/posts/javahockstu/</link>
+  <link>http://example.org/posts/javahockstu/</link>
   <pubDate>Fri, 26 May 2023 20:19:50 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/javahockstu/</guid>
+  <guid>http://example.org/posts/javahockstu/</guid>
   <description><![CDATA[自学JAVA基础-CallBack回调-Hook-钩子，练习代码 首先定义一个动物的接口，里面包含一个cry函数 package com.ezxmt.hook; public interface Ianimal { void cry(); }定义两个具体]]></description>
 </item>
 <item>
   <title>赤兔之死</title>
-  <link>http://localhost:1313/posts/ct/</link>
+  <link>http://example.org/posts/ct/</link>
   <pubDate>Wed, 24 May 2023 15:05:12 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/ct/</guid>
+  <guid>http://example.org/posts/ct/</guid>
   <description><![CDATA[建安二十六年，公元221年，关羽走麦城，兵败遭擒，拒降，为孙权所害。其坐骑赤兔马为孙权赐予马忠。 一日，马忠上表：赤兔马绝食数日，不久将亡，孙]]></description>
 </item>
 <item>
   <title>CentOS 7 安装MySQL 8.0</title>
-  <link>http://localhost:1313/posts/centos7instmysql/</link>
+  <link>http://example.org/posts/centos7instmysql/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/centos7instmysql/</guid>
+  <guid>http://example.org/posts/centos7instmysql/</guid>
   <description><![CDATA[一、安装之前检测系统是否有自带的MySQL#检查是否安装过MySQL rpm -qa | grep mysql #检查是否存在 mariadb 数据库（内置的MySQL数据库），有则强制删除]]></description>
 </item>
 <item>
   <title>我的第一篇文章</title>
-  <link>http://localhost:1313/posts/first_post/</link>
+  <link>http://example.org/posts/first_post/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://localhost:1313/posts/first_post/</guid>
+  <guid>http://example.org/posts/first_post/</guid>
   <description><![CDATA[博客（英语：Blog）是一种在线日记型式的个人网站，借由张帖子章、图片或视频来记录生活、抒发情感或分享信息。博客上的文章通常根据张贴时间，以]]></description>
 </item>
 </channel>
