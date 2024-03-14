@@ -4,7 +4,15 @@
     <link>http://example.org/tags/java/</link>
     <description>Java - 标签 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Fri, 26 May 2023 20:19:50 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/java/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/java/" rel="self" type="application/rss+xml" /><item>
+  <title>JAVA基础-HashMap学习01</title>
+  <link>http://example.org/posts/javahashmapstu/</link>
+  <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://example.org/posts/javahashmapstu/</guid>
+  <description><![CDATA[自学JAVA-HashMap初级，练习代码 HashMap使用，统计单词出现的次数，基础版，写的不好 package collenction; import java.util.HashMap; import java.util.Iterator; import java.util.Map; import java.util.Set; /** * this is a cat and that is a mice]]></description>
+</item>
+<item>
   <title>JAVA基础-ArrayList学习-初级版本</title>
   <link>http://example.org/posts/javaarrayliststu/</link>
   <pubDate>Fri, 26 May 2023 20:19:50 &#43;0800</pubDate>
