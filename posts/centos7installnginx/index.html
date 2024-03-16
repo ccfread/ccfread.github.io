@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>CentOS 7 安装Nginx - 悠闲小馒头</title><meta name="author" content="Fread">
+<meta name="author-link" content="https://ezxmt.com">
+<meta name="description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx" /><meta name="keywords" content='Stu, Nginx, CentOS' /><meta itemprop="name" content="CentOS 7 安装Nginx">
+<meta itemprop="description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx"><meta itemprop="datePublished" content="2024-03-16T14:48:08+08:00" />
+<meta itemprop="dateModified" content="2024-03-16T14:48:08+08:00" />
+<meta itemprop="wordCount" content="447">
+<meta itemprop="keywords" content="Stu,Nginx,CentOS," /><meta property="og:title" content="CentOS 7 安装Nginx" />
+<meta property="og:description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/centos7installnginx/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-16T14:48:08+08:00" />
+<meta property="article:modified_time" content="2024-03-16T14:48:08+08:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="CentOS 7 安装Nginx"/>
+<meta name="twitter:description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://example.org/posts/centos7installnginx/" /><link rel="prev" href="http://example.org/posts/javahashmapstu/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "CentOS 7 安装Nginx",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/example.org\/posts\/centos7installnginx\/"
+    },"genre": "posts","keywords": "Stu, Nginx, CentOS","wordcount":  447 ,
+    "url": "http:\/\/example.org\/posts\/centos7installnginx\/","datePublished": "2024-03-16T14:48:08+08:00","dateModified": "2024-03-16T14:48:08+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Fread"
+      },"description": "自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="悠闲小馒头"><span class="header-title-text">悠闲小馒头</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              >文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              >分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/about"
+                
+                
+              >关于</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/friends"
+                
+                
+              >友链</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              >标签</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="悠闲小馒头"><span class="header-title-text">悠闲小馒头</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                >文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                >分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/about"
+                  
+                  
+                >关于</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/friends"
+                  
+                  
+                >友链</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                >标签</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>CentOS 7 安装Nginx</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://fread.top" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/121fedd5171cf054a2887fdd5cbf4d0a?s=32&amp;d=" alt="Fread" data-title="Fread" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Fread</a></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/softinstall/" class="post-category" title="分类 - SoftInstall"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> SoftInstall</a></span></div><div class="post-meta-line"><span title="发布于 2024-03-16 14:48:08"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-03-16">2024-03-16</time></span>&nbsp;<span title="447 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="CentOS 7 安装Nginx">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>今天尝试在腾讯轻量云上安装nginx，顺便记录一下安装过程。</p>
+<p>先看一下我的服务器版本
+<figure><a class="lightgallery" href="../../img/tx_centos_kener.png?size=large" data-thumbnail="../../img/tx_centos_kener.png?size=small" data-sub-html="<h2>linux 版本信息</h2><p>linux 版本信息</p>"><img loading="lazy" src="../../img/tx_centos_kener.png" alt="linux 版本信息" srcset="../../img/tx_centos_kener.png?size=small, ../../img/tx_centos_kener.png?size=medium 1.5x, ../../img/tx_centos_kener.png?size=large 2x" data-title="linux 版本信息" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">linux 版本信息</figcaption>
+  </figure></p>
+<h4 id="在线安装" class="heading-element">
+  <a href="#%e5%9c%a8%e7%ba%bf%e5%ae%89%e8%a3%85" class="heading-mark"></a>在线安装</h4><p>首先安装EPEL并更新yum</p>
+<div class="highlight" id="id-1"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo yum install epel-release -y <span class="c1">#安装，默认同意</span>
+</span></span><span class="line"><span class="cl">sudo yum update -y <span class="c1">#更新，默认同意</span></span></span></code></pre></div><p>可以直接yum安装nginx，并没有指定安装版本</p>
+<div class="highlight" id="id-2"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo yum install nginx -y <span class="c1">#安装</span>
+</span></span><span class="line"><span class="cl">sudo systemctl start nginx <span class="c1"># 启动nginx</span></span></span></code></pre></div><p>启动后查看nginx状态，看到 <strong>active(running)</strong> 就代表nginx已经启动</p>
+<div class="highlight" id="id-3"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl status nginx</span></span></code></pre></div><p><figure><a class="lightgallery" href="../../img/nginxstatus.png?size=large" data-thumbnail="../../img/nginxstatus.png?size=small" data-sub-html="<h2>Nginx 状态</h2><p>nginx 状态</p>"><img loading="lazy" src="../../img/nginxstatus.png" alt="Nginx 状态" srcset="../../img/nginxstatus.png?size=small, ../../img/nginxstatus.png?size=medium 1.5x, ../../img/nginxstatus.png?size=large 2x" data-title="nginx 状态" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">Nginx 状态</figcaption>
+  </figure></p>
+<p>设置Nginx开机自启动</p>
+<div class="highlight" id="id-4"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> nginx</span></span></code></pre></div><p>打开Nginx配置文件,调整网站目录等一些配置</p>
+<div class="highlight" id="id-5"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 跳转到配置文件所在目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /etc/nginx/
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看nginx.conf 配置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># cat nginx.conf</span></span></span></code></pre></div><p>我自己的习惯，先备份当前的conf文件，然后使用新的conf写配置文件。但操作配置之前，优先检查一下<strong>OpenSSL</strong>的版本,我会升级到新的稳定版，然后再配置。</p>
+<p>先检查当前OpenSSL版本</p>
+<div class="highlight" id="id-6"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">openssl version <span class="c1"># 查看当前OpenSSL版本</span></span></span></code></pre></div><p>升级OpenSSL,我喜欢高版本，还支持<strong>TLS1.3</strong></p>
+<blockquote>
+<p>OpenSSL官网 <a href="https://www.openssl.org/source/"target="_blank" rel="external nofollow noopener noreferrer">https://www.openssl.org/source/</a></p>
+</blockquote>
+<div class="highlight" id="id-7"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 下载指定版本安装包</span>
+</span></span><span class="line"><span class="cl">wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz
+</span></span><span class="line"><span class="cl"><span class="c1"># 解压缩</span>
+</span></span><span class="line"><span class="cl">tar -zxvf openssl-1.1.1k.tar.gz
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> openssl-1.1.1k
+</span></span><span class="line"><span class="cl"><span class="c1"># 配置安装选项（可以指定安装路径等）</span>
+</span></span><span class="line"><span class="cl">./config --prefix<span class="o">=</span>/usr/local/openssl --openssldir<span class="o">=</span>/usr/local/openssl shared zlib
+</span></span><span class="line"><span class="cl"><span class="c1"># 编译安装</span>
+</span></span><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl">sudo make install</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2024-03-16 14:48:08">更新于 2024-03-16&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/centos7installnginx/" data-title="CentOS 7 安装Nginx" data-hashtags="Stu,Nginx,CentOS"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/centos7installnginx/" data-hashtag="Stu"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/centos7installnginx/" data-title="CentOS 7 安装Nginx" data-ralateuid="Soc丶罂粟花"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/stu/" class="post-tag" title="标签 - Stu">Stu</a><a href="/tags/nginx/" class="post-tag" title="标签 - Nginx">Nginx</a><a href="/tags/centos/" class="post-tag" title="标签 - CentOS">CentOS</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/javahashmapstu/" class="post-nav-item" rel="prev" title="JAVA基础-HashMap学习01"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>JAVA基础-HashMap学习01</a></div>
+</div>
+<div id="comments"></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://ezxmt.com"target="_blank" rel="external nofollow noopener noreferrer">Fread</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='网站运行中……'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="ms-1 d-none">悄咪咪的存活了</span><span class="run-times ms-1">网站运行中……</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div><div class="footer-line beian"><span class="gov"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41082302411133" target="_blank" > &nbsp;豫公网安备 41082302411133号</a></span><span class="icp footer-divider"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">京ICP备15015906号-6</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="查看评论"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":12},"comment":{"enable":true,"expired":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"siteTime":"2023-05-18 16:15:22+08:00"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

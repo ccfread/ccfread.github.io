@@ -4,9 +4,17 @@
     <link>http://example.org/</link>
     <description>悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</lastBuildDate>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</lastBuildDate>
       <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>CentOS 7 安装Nginx</title>
+  <link>http://example.org/posts/centos7installnginx/</link>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://example.org/posts/centos7installnginx/</guid>
+  <description><![CDATA[今天尝试在腾讯轻量云上安装nginx，顺便记录一下安装过程。 先看一下我的服务器版本 linux 版本信息 在线安装首先安装EPEL并更新yum sudo yum install epel-release -y #]]></description>
+</item>
+<item>
   <title>JAVA基础-HashMap学习01</title>
   <link>http://example.org/posts/javahashmapstu/</link>
   <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
@@ -39,6 +47,14 @@
   <description><![CDATA[2024年新年快乐 今天是农历2023年大年三十了，下午四点半，爸爸妈妈在准备饺子馅，老婆带着娃娃睡觉💤呢，我刚贴了春联，全家准备过年了。回顾]]></description>
 </item>
 <item>
+  <title>2023年成都-云南旅游花费记录</title>
+  <link>http://example.org/posts/traveltoyunnan/</link>
+  <pubDate>Mon, 31 Jul 2023 16:36:34 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://example.org/posts/traveltoyunnan/</guid>
+  <description><![CDATA[2023/07/21 ✈️ 上海 ~ 成都(天府T2) 21:30起飞 中国国际航空 CA4536💰2816 保险 💰58 1:00 到成都，入住酒店💰350 打车到酒店 💰220 2023/07/22 一日游 💰]]></description>
+</item>
+<item>
   <title>wordpress每天60秒，一篇小文章</title>
   <link>http://example.org/posts/wp-60s/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
@@ -69,22 +85,6 @@
   <author>Fread</author>
   <guid>http://example.org/posts/javahockstu/</guid>
   <description><![CDATA[自学JAVA基础-CallBack回调-Hook-钩子，练习代码 首先定义一个动物的接口，里面包含一个cry函数 package com.ezxmt.hook; public interface Ianimal { void cry(); }定义两个具体]]></description>
-</item>
-<item>
-  <title>赤兔之死</title>
-  <link>http://example.org/posts/ct/</link>
-  <pubDate>Wed, 24 May 2023 15:05:12 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/posts/ct/</guid>
-  <description><![CDATA[建安二十六年，公元221年，关羽走麦城，兵败遭擒，拒降，为孙权所害。其坐骑赤兔马为孙权赐予马忠。 一日，马忠上表：赤兔马绝食数日，不久将亡，孙]]></description>
-</item>
-<item>
-  <title>CentOS 7 安装MySQL 8.0</title>
-  <link>http://example.org/posts/centos7instmysql/</link>
-  <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/posts/centos7instmysql/</guid>
-  <description><![CDATA[一、安装之前检测系统是否有自带的MySQL#检查是否安装过MySQL rpm -qa | grep mysql #检查是否存在 mariadb 数据库（内置的MySQL数据库），有则强制删除]]></description>
 </item>
 </channel>
 </rss>

@@ -4,20 +4,36 @@
     <link>http://example.org/tags/</link>
     <description>Tags - 标签 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
-  <title>Java</title>
-  <link>http://example.org/tags/java/</link>
-  <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>CentOS</title>
+  <link>http://example.org/tags/centos/</link>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/tags/java/</guid>
+  <guid>http://example.org/tags/centos/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Nginx</title>
+  <link>http://example.org/tags/nginx/</link>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://example.org/tags/nginx/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Stu</title>
   <link>http://example.org/tags/stu/</link>
-  <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
   <author>Fread</author>
   <guid>http://example.org/tags/stu/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Java</title>
+  <link>http://example.org/tags/java/</link>
+  <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://example.org/tags/java/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
@@ -50,14 +66,6 @@
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
   <guid>http://example.org/tags/themes/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>CentOS</title>
-  <link>http://example.org/tags/centos/</link>
-  <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/tags/centos/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
