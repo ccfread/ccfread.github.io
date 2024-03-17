@@ -10,7 +10,7 @@
 <meta name="description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx" /><meta name="keywords" content='Stu, Nginx, CentOS' /><meta itemprop="name" content="CentOS 7 安装Nginx">
 <meta itemprop="description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx"><meta itemprop="datePublished" content="2024-03-16T14:48:08+08:00" />
 <meta itemprop="dateModified" content="2024-03-16T14:48:08+08:00" />
-<meta itemprop="wordCount" content="447">
+<meta itemprop="wordCount" content="838">
 <meta itemprop="keywords" content="Stu,Nginx,CentOS," /><meta property="og:title" content="CentOS 7 安装Nginx" />
 <meta property="og:description" content="自己尝试安装了一次Nginx，小白一个，慢慢摸索安装Nginx,CentOS 7 安装安装Nginx" />
 <meta property="og:type" content="article" />
@@ -34,7 +34,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/example.org\/posts\/centos7installnginx\/"
-    },"genre": "posts","keywords": "Stu, Nginx, CentOS","wordcount":  447 ,
+    },"genre": "posts","keywords": "Stu, Nginx, CentOS","wordcount":  838 ,
     "url": "http:\/\/example.org\/posts\/centos7installnginx\/","datePublished": "2024-03-16T14:48:08+08:00","dateModified": "2024-03-16T14:48:08+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -138,7 +138,7 @@
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>CentOS 7 安装Nginx</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://fread.top" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/121fedd5171cf054a2887fdd5cbf4d0a?s=32&amp;d=" alt="Fread" data-title="Fread" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Fread</a></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/softinstall/" class="post-category" title="分类 - SoftInstall"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> SoftInstall</a></span></div><div class="post-meta-line"><span title="发布于 2024-03-16 14:48:08"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-03-16">2024-03-16</time></span>&nbsp;<span title="447 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="CentOS 7 安装Nginx">
+      <div class="post-meta-line"><span class="post-author"><a href="https://fread.top" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/121fedd5171cf054a2887fdd5cbf4d0a?s=32&amp;d=" alt="Fread" data-title="Fread" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Fread</a></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/softinstall/" class="post-category" title="分类 - SoftInstall"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> SoftInstall</a></span></div><div class="post-meta-line"><span title="发布于 2024-03-16 14:48:08"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-03-16">2024-03-16</time></span>&nbsp;<span title="838 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="CentOS 7 安装Nginx">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -164,8 +164,9 @@
 <div class="highlight" id="id-1"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo yum install epel-release -y <span class="c1">#安装，默认同意</span>
 </span></span><span class="line"><span class="cl">sudo yum update -y <span class="c1">#更新，默认同意</span></span></span></code></pre></div><p>可以直接yum安装nginx，并没有指定安装版本</p>
 <div class="highlight" id="id-2"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo yum install nginx -y <span class="c1">#安装</span>
-</span></span><span class="line"><span class="cl">sudo systemctl start nginx <span class="c1"># 启动nginx</span></span></span></code></pre></div><p>启动后查看nginx状态，看到 <strong>active(running)</strong> 就代表nginx已经启动</p>
-<div class="highlight" id="id-3"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl status nginx</span></span></code></pre></div><p><figure><a class="lightgallery" href="../../img/nginxstatus.png?size=large" data-thumbnail="../../img/nginxstatus.png?size=small" data-sub-html="<h2>Nginx 状态</h2><p>nginx 状态</p>"><img loading="lazy" src="../../img/nginxstatus.png" alt="Nginx 状态" srcset="../../img/nginxstatus.png?size=small, ../../img/nginxstatus.png?size=medium 1.5x, ../../img/nginxstatus.png?size=large 2x" data-title="nginx 状态" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">Nginx 状态</figcaption>
+</span></span><span class="line"><span class="cl">sudo systemctl start nginx <span class="c1"># 启动nginx</span></span></span></code></pre></div><p>启动后查看nginx状态</p>
+<div class="highlight" id="id-3"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl status nginx</span></span></code></pre></div><p>看到 <!-- raw HTML omitted --><strong>active(running)</strong><!-- raw HTML omitted --> 就代表nginx已经启动</p>
+<p><figure><a class="lightgallery" href="../../img/nginxstatus.png?size=large" data-thumbnail="../../img/nginxstatus.png?size=small" data-sub-html="<h2>Nginx 状态</h2><p>nginx 状态</p>"><img loading="lazy" src="../../img/nginxstatus.png" alt="Nginx 状态" srcset="../../img/nginxstatus.png?size=small, ../../img/nginxstatus.png?size=medium 1.5x, ../../img/nginxstatus.png?size=large 2x" data-title="nginx 状态" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">Nginx 状态</figcaption>
   </figure></p>
 <p>设置Nginx开机自启动</p>
 <div class="highlight" id="id-4"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> nginx</span></span></code></pre></div><p>打开Nginx配置文件,调整网站目录等一些配置</p>
@@ -178,16 +179,83 @@
 <blockquote>
 <p>OpenSSL官网 <a href="https://www.openssl.org/source/"target="_blank" rel="external nofollow noopener noreferrer">https://www.openssl.org/source/</a></p>
 </blockquote>
-<div class="highlight" id="id-7"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 下载指定版本安装包</span>
+<div class="highlight" id="id-7"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 下载指定版本安装包，操作步骤根据自己的版本号定</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># wget https://www.openssl.org/source/openssl-3.1.5.tar.gz</span>
 </span></span><span class="line"><span class="cl">wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz
 </span></span><span class="line"><span class="cl"><span class="c1"># 解压缩</span>
 </span></span><span class="line"><span class="cl">tar -zxvf openssl-1.1.1k.tar.gz
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> openssl-1.1.1k
 </span></span><span class="line"><span class="cl"><span class="c1"># 配置安装选项（可以指定安装路径等）</span>
-</span></span><span class="line"><span class="cl">./config --prefix<span class="o">=</span>/usr/local/openssl --openssldir<span class="o">=</span>/usr/local/openssl shared zlib
-</span></span><span class="line"><span class="cl"><span class="c1"># 编译安装</span>
+</span></span><span class="line"><span class="cl">./config --prefix<span class="o">=</span>/usr/local/openssl --openssldir<span class="o">=</span>/usr/local/openssl shared zlib</span></span></code></pre></div><p>如果出现以下错误
+<figure><a class="lightgallery" href="../../img/clocateIPC.png?size=large" data-thumbnail="../../img/clocateIPC.png?size=small" data-sub-html="<h2>conferror</h2><p>配置OpenSSL报错</p>"><img loading="lazy" src="../../img/clocateIPC.png" alt="conferror" srcset="../../img/clocateIPC.png?size=small, ../../img/clocateIPC.png?size=medium 1.5x, ../../img/clocateIPC.png?size=large 2x" data-title="配置OpenSSL报错" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">conferror</figcaption>
+  </figure></p>
+<p>则使用 <code>yum -y install perl-IPC-Cmd</code> ,安装好之后重新配置，看到下图就是配置成功了。</p>
+<p><figure><a class="lightgallery" href="../../img/opsslconfdown.png?size=large" data-thumbnail="../../img/opsslconfdown.png?size=small" data-sub-html="<h2>OpenSSL配置完成</h2><p>OpenSSL配置完成</p>"><img loading="lazy" src="../../img/opsslconfdown.png" alt="OpenSSL配置完成" srcset="../../img/opsslconfdown.png?size=small, ../../img/opsslconfdown.png?size=medium 1.5x, ../../img/opsslconfdown.png?size=large 2x" data-title="OpenSSL配置完成" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">OpenSSL配置完成</figcaption>
+  </figure></p>
+<div class="highlight" id="id-8"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 编译安装</span>
 </span></span><span class="line"><span class="cl">make
-</span></span><span class="line"><span class="cl">sudo make install</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+</span></span><span class="line"><span class="cl">sudo make install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除旧版本文件</span>
+</span></span><span class="line"><span class="cl">rm -rf /usr/bin/openssl
+</span></span><span class="line"><span class="cl">rm -rf /usr/include/openssl
+</span></span><span class="line"><span class="cl">rm -rf /usr/lib64/libssl.so
+</span></span><span class="line"><span class="cl">rm -rf /usr/lib64/libcrypto.so
+</span></span><span class="line"><span class="cl">rm -rf /usr/lib/libssl.so
+</span></span><span class="line"><span class="cl">rm -rf /usr/lib/libcrypto.so
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 配置软连接（路径要和上面配置的路径保持一致,文件名要按版本来）</span>
+</span></span><span class="line"><span class="cl">ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
+</span></span><span class="line"><span class="cl">ln -s /usr/local/openssl/lib64/libssl.so.3 /usr/lib64/libssl.so.3
+</span></span><span class="line"><span class="cl">ln -s /usr/local/openssl/lib64/libcrypto.so.3 /usr/lib64/libcrypto.so.3</span></span></code></pre></div><p>全都安装完成后，查看是否安装成</p>
+<div class="highlight" id="id-9"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">openssl version</span></span></code></pre></div><p>显示自己的版本号就说明成功了
+<figure><a class="lightgallery" href="../../img/opensslversion.png?size=large" data-thumbnail="../../img/opensslversion.png?size=small" data-sub-html="<h2>OpenSSL版本</h2><p>OpenSSL版本</p>"><img loading="lazy" src="../../img/opensslversion.png" alt="OpenSSL版本" srcset="../../img/opensslversion.png?size=small, ../../img/opensslversion.png?size=medium 1.5x, ../../img/opensslversion.png?size=large 2x" data-title="OpenSSL版本" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a><figcaption class="image-caption">OpenSSL版本</figcaption>
+  </figure></p>
+<p>接下来配置<code>nginx.conf</code>,可以按找个模版进行配置，供参考</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf"># generated 2024-03-17, Mozilla Guideline v5.7, nginx 1.20.1, OpenSSL 3.1.5, modern configuration
+# https://ssl-config.mozilla.org/#server=nginx&amp;version=1.20.1&amp;config=modern&amp;openssl=3.1.5&amp;guideline=5.7
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    # 301重定向，转到https
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    #HTTPS的默认访问端口443。
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+
+    # 配置域名
+    server_name XXXX.XXXX;
+
+
+    ssl_certificate /path/to/signed_cert_plus_intermediates;
+    ssl_certificate_key /path/to/private_key;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:MozSSL:10m;  # about 40000 sessions
+    ssl_session_tickets off;
+
+    # modern configuration
+    ssl_protocols TLSv1.3;
+    ssl_prefer_server_ciphers off;
+
+    # HSTS (ngx_http_headers_module is required) (63072000 seconds)
+    add_header Strict-Transport-Security &#34;max-age=63072000&#34; always;
+
+    # OCSP stapling
+    ssl_stapling on;
+    ssl_stapling_verify on;
+
+    # verify chain of trust of OCSP response using Root CA and Intermediate certs
+    ssl_trusted_certificate /path/to/root_CA_cert_plus_intermediates;
+
+    # replace with the IP address of your resolver
+    resolver 127.0.0.1;
+}</code></pre></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
