@@ -1,23 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>SoftInstall - 分类 - 悠闲小馒头</title>
-    <link>http://example.org/categories/softinstall/</link>
+    <link>http://i.fread.top/categories/softinstall/</link>
     <description>SoftInstall - 分类 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/softinstall/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</lastBuildDate><atom:link href="http://i.fread.top/categories/softinstall/" rel="self" type="application/rss+xml" /><item>
   <title>CentOS 7 安装Nginx</title>
-  <link>http://example.org/posts/centos7installnginx/</link>
+  <link>http://i.fread.top/posts/centos7installnginx/</link>
   <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/centos7installnginx/</guid>
+  <guid>http://i.fread.top/posts/centos7installnginx/</guid>
   <description><![CDATA[今天尝试在腾讯轻量云上安装nginx，顺便记录一下安装过程。 先看一下我的服务器版本 linux 版本信息 在线安装首先安装EPEL并更新yum sudo yum install epel-release -y #]]></description>
 </item>
 <item>
   <title>CentOS 7 安装MySQL 8.0</title>
-  <link>http://example.org/posts/centos7instmysql/</link>
+  <link>http://i.fread.top/posts/centos7instmysql/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/centos7instmysql/</guid>
+  <guid>http://i.fread.top/posts/centos7instmysql/</guid>
   <description><![CDATA[一、安装之前检测系统是否有自带的MySQL#检查是否安装过MySQL rpm -qa | grep mysql #检查是否存在 mariadb 数据库（内置的MySQL数据库），有则强制删除]]></description>
 </item>
 </channel>

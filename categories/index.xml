@@ -1,47 +1,47 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Categories - 分类 - 悠闲小馒头</title>
-    <link>http://example.org/categories/</link>
+    <link>http://i.fread.top/categories/</link>
     <description>Categories - 分类 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</lastBuildDate><atom:link href="http://i.fread.top/categories/" rel="self" type="application/rss+xml" /><item>
+  <title>Trivial</title>
+  <link>http://i.fread.top/categories/trivial/</link>
+  <pubDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://i.fread.top/categories/trivial/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>SoftInstall</title>
-  <link>http://example.org/categories/softinstall/</link>
+  <link>http://i.fread.top/categories/softinstall/</link>
   <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/categories/softinstall/</guid>
+  <guid>http://i.fread.top/categories/softinstall/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>JavaBasics</title>
-  <link>http://example.org/categories/javabasics/</link>
+  <link>http://i.fread.top/categories/javabasics/</link>
   <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/categories/javabasics/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Trivial</title>
-  <link>http://example.org/categories/trivial/</link>
-  <pubDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/categories/trivial/</guid>
+  <guid>http://i.fread.top/categories/javabasics/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Hugo</title>
-  <link>http://example.org/categories/hugo/</link>
+  <link>http://i.fread.top/categories/hugo/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/categories/hugo/</guid>
+  <guid>http://i.fread.top/categories/hugo/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Wordpress</title>
-  <link>http://example.org/categories/wordpress/</link>
+  <link>http://i.fread.top/categories/wordpress/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/categories/wordpress/</guid>
+  <guid>http://i.fread.top/categories/wordpress/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

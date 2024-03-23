@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Hugo - 分类 - 悠闲小馒头</title>
-    <link>http://example.org/categories/hugo/</link>
+    <link>http://i.fread.top/categories/hugo/</link>
     <description>Hugo - 分类 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 27 May 2023 12:14:22 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/hugo/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 27 May 2023 12:14:22 &#43;0800</lastBuildDate><atom:link href="http://i.fread.top/categories/hugo/" rel="self" type="application/rss+xml" /><item>
   <title>主题配置内容</title>
-  <link>http://example.org/posts/yamlconfig/</link>
+  <link>http://i.fread.top/posts/yamlconfig/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/yamlconfig/</guid>
+  <guid>http://i.fread.top/posts/yamlconfig/</guid>
   <description><![CDATA[主题配置文件可配置的全量内容 [params] # FixIt 主题版本 version = &#34;0.2.X&#34; # 例如：&#34;0.2.X&#34;, &#34;0.2.15&#34;, &#34;v0.2.15&#34; 等 # 网站描述 description = &#34;这是我的 Hugo FixIt 网站&#3]]></description>
 </item>
 </channel>

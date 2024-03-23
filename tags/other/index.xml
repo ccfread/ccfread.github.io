@@ -1,55 +1,63 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Other - 标签 - 悠闲小馒头</title>
-    <link>http://example.org/tags/other/</link>
+    <link>http://i.fread.top/tags/other/</link>
     <description>Other - 标签 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/other/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</lastBuildDate><atom:link href="http://i.fread.top/tags/other/" rel="self" type="application/rss+xml" /><item>
+  <title>主题美化的一些东西</title>
+  <link>http://i.fread.top/posts/beautiful/</link>
+  <pubDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://i.fread.top/posts/beautiful/</guid>
+  <description><![CDATA[Fixit-主题美化记录{{&lt; admonition quote &quot;说明&quot; true &gt;}} 记录自己博客主题的修改和美化记录 {{&lt; /admonition &gt;}} &gt; 本文阅读前，基于你已经了解h]]></description>
+</item>
+<item>
   <title>记录拔智齿经历</title>
-  <link>http://example.org/posts/extract-tooth/</link>
+  <link>http://i.fread.top/posts/extract-tooth/</link>
   <pubDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/extract-tooth/</guid>
+  <guid>http://i.fread.top/posts/extract-tooth/</guid>
   <description><![CDATA[记录拔智齿经历 先说总结，拔智齿还是要年轻的时候去拔，年纪大了拔牙是真的难受。 春节前感觉自己的右上智齿影响咬合，吃东西容易藏脏东西，本来想着找]]></description>
 </item>
 <item>
   <title>2024年生日快乐</title>
-  <link>http://example.org/posts/2024-happybirthday/</link>
+  <link>http://i.fread.top/posts/2024-happybirthday/</link>
   <pubDate>Wed, 28 Feb 2024 23:05:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/2024-happybirthday/</guid>
+  <guid>http://i.fread.top/posts/2024-happybirthday/</guid>
   <description><![CDATA[祝我自己生日快乐 今天是我32岁的生日了，我自己其实都忘掉了，上午的时候突然收到了一个外卖的电话，告诉我有一个星巴克的订单，别人给我买的，要我]]></description>
 </item>
 <item>
   <title>2024新年快乐</title>
-  <link>http://example.org/posts/2024-happynewyear/</link>
+  <link>http://i.fread.top/posts/2024-happynewyear/</link>
   <pubDate>Fri, 09 Feb 2024 16:30:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/2024-happynewyear/</guid>
+  <guid>http://i.fread.top/posts/2024-happynewyear/</guid>
   <description><![CDATA[2024年新年快乐 今天是农历2023年大年三十了，下午四点半，爸爸妈妈在准备饺子馅，老婆带着娃娃睡觉💤呢，我刚贴了春联，全家准备过年了。回顾]]></description>
 </item>
 <item>
   <title>2023年成都-云南旅游花费记录</title>
-  <link>http://example.org/posts/traveltoyunnan/</link>
+  <link>http://i.fread.top/posts/traveltoyunnan/</link>
   <pubDate>Mon, 31 Jul 2023 16:36:34 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/traveltoyunnan/</guid>
+  <guid>http://i.fread.top/posts/traveltoyunnan/</guid>
   <description><![CDATA[2023/07/21 ✈️ 上海 ~ 成都(天府T2) 21:30起飞 中国国际航空 CA4536💰2816 保险 💰58 1:00 到成都，入住酒店💰350 打车到酒店 💰220 2023/07/22 一日游 💰]]></description>
 </item>
 <item>
   <title>赤兔之死</title>
-  <link>http://example.org/posts/ct/</link>
+  <link>http://i.fread.top/posts/ct/</link>
   <pubDate>Wed, 24 May 2023 15:05:12 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/ct/</guid>
+  <guid>http://i.fread.top/posts/ct/</guid>
   <description><![CDATA[建安二十六年，公元221年，关羽走麦城，兵败遭擒，拒降，为孙权所害。其坐骑赤兔马为孙权赐予马忠。 一日，马忠上表：赤兔马绝食数日，不久将亡，孙]]></description>
 </item>
 <item>
   <title>我的第一篇文章</title>
-  <link>http://example.org/posts/first_post/</link>
+  <link>http://i.fread.top/posts/first_post/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/posts/first_post/</guid>
+  <guid>http://i.fread.top/posts/first_post/</guid>
   <description><![CDATA[博客（英语：Blog）是一种在线日记型式的个人网站，借由张帖子章、图片或视频来记录生活、抒发情感或分享信息。博客上的文章通常根据张贴时间，以]]></description>
 </item>
 </channel>

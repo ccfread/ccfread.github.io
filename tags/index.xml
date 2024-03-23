@@ -1,79 +1,79 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Tags - 标签 - 悠闲小馒头</title>
-    <link>http://example.org/tags/</link>
+    <link>http://i.fread.top/tags/</link>
     <description>Tags - 标签 | 悠闲小馒头</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>6064103@qq.com (Fread)</managingEditor>
-      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
-  <title>CentOS</title>
-  <link>http://example.org/tags/centos/</link>
-  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/tags/centos/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Nginx</title>
-  <link>http://example.org/tags/nginx/</link>
-  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/tags/nginx/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Stu</title>
-  <link>http://example.org/tags/stu/</link>
-  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/tags/stu/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Java</title>
-  <link>http://example.org/tags/java/</link>
-  <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
-  <author>Fread</author>
-  <guid>http://example.org/tags/java/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
+      <webMaster>6064103@qq.com (Fread)</webMaster><lastBuildDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</lastBuildDate><atom:link href="http://i.fread.top/tags/" rel="self" type="application/rss+xml" /><item>
   <title>Other</title>
-  <link>http://example.org/tags/other/</link>
-  <pubDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</pubDate>
+  <link>http://i.fread.top/tags/other/</link>
+  <pubDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/tags/other/</guid>
+  <guid>http://i.fread.top/tags/other/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Trivial</title>
-  <link>http://example.org/tags/trivial/</link>
-  <pubDate>Tue, 05 Mar 2024 20:14:22 &#43;0800</pubDate>
+  <link>http://i.fread.top/tags/trivial/</link>
+  <pubDate>Mon, 18 Mar 2024 22:05:46 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/tags/trivial/</guid>
+  <guid>http://i.fread.top/tags/trivial/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>CentOS</title>
+  <link>http://i.fread.top/tags/centos/</link>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://i.fread.top/tags/centos/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Nginx</title>
+  <link>http://i.fread.top/tags/nginx/</link>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://i.fread.top/tags/nginx/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Stu</title>
+  <link>http://i.fread.top/tags/stu/</link>
+  <pubDate>Sat, 16 Mar 2024 14:48:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://i.fread.top/tags/stu/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Java</title>
+  <link>http://i.fread.top/tags/java/</link>
+  <pubDate>Thu, 14 Mar 2024 22:18:08 &#43;0800</pubDate>
+  <author>Fread</author>
+  <guid>http://i.fread.top/tags/java/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Php</title>
-  <link>http://example.org/tags/php/</link>
+  <link>http://i.fread.top/tags/php/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/tags/php/</guid>
+  <guid>http://i.fread.top/tags/php/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Themes</title>
-  <link>http://example.org/tags/themes/</link>
+  <link>http://i.fread.top/tags/themes/</link>
   <pubDate>Sat, 27 May 2023 12:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/tags/themes/</guid>
+  <guid>http://i.fread.top/tags/themes/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>MySQL</title>
-  <link>http://example.org/tags/mysql/</link>
+  <link>http://i.fread.top/tags/mysql/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
   <author>Fread</author>
-  <guid>http://example.org/tags/mysql/</guid>
+  <guid>http://i.fread.top/tags/mysql/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
